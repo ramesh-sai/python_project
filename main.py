@@ -1,8 +1,8 @@
-def fibonacci(number):
-  if number == 1:
-    return 2
-  else return fibonacci(number - 1) + fibonacci(number - 2)
+def fib(n):
+  if n == 1: return 2
+  if n == 0: return 1
+  return fib(n-1) + fib(n-2)
   
 if __name__ == '__main__':
   print('Started')
-  fibonacci(10)
+  fib(10)
